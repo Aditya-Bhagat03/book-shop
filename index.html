@@ -31,6 +31,29 @@
             padding: 10px 20px;
             cursor: pointer;
         }
+
+        .column {
+        display: inline-block;
+        vertical-align: top;
+        }
+
+        .left-column {
+            width: 60%; /* Adjust the width as needed */
+        }
+
+        .right-column {
+            width: 40%; /* Adjust the width as needed */
+        }
+
+        .top-container{
+            display: flex;
+        }
+        #image1{
+            width: 400px;
+            height: 400px;
+            margin: 100px;
+        }
+
     </style>
 </head>
 
@@ -93,23 +116,34 @@
     </header>
 
     <section id="home" class="hero">
-        <img class="logo" src="./img/logo.png" alt="Logo">
+        <div class="top-container">
+            <div class="column left-column">
+                <h1>
+                    <span>"Hello! Folks"</span> <br>
+                    India's Largest <br>Book Shop! <br> <span class="numberclass">2023</span>
+                </h1>
+           
+    
+            <div class="header-text">
+                Welcome to India's Largest Bookstore - A World of Infinite Stories and Knowledge Awaits You. Explore, Learn, and Delight in Reading
+            </div>
+            <div class="header-text2">
+                "A single book can indeed be a complete entity in itself"
+            </div>
+            <div class="header-text3">
+                <br>
+                What is Bookshop?
+                Bookshop is a meta-search engine for comparing books prices and know availability across all popular Indian book stores.
+            </div>
 
-        <h1>
-            <span>"Hello! Folks"</span> <br>
-            India's Largest <br>Book Shop! <br> <span class="numberclass">2023</span>
-        </h1>
-
-        <div class="header-text">
-        Welcome to India's Largest Bookstore - A World of Infinite Stories and Knowledge Awaits You. Explore, Learn, and Delight in Reading
         </div>
-        <div class="header-text2">
-            "A single book can indeed be a complete entity in itself"
+    
+        <div class="column right-column">
+            <img id="image1" src="bookstore-clipart-xl.png" alt="">
         </div>
-        <div class="header-text3">
-            @ Created and Managed by Aditya Bhagat!
         </div>
-    </section>
+        
+    </section>    
 
     <section class="book-section primarybgcolor">
         <h3 id="Booksection">Book Section</h3>
