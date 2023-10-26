@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LearnMe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0fc917bac0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-image: url('1.png');
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+
+        .contact-container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            padding: 40px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: rgb(207, 52, 52);
+        }
+
+        .contact-container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-container p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .feedback-box {
+            width: calc(100% - 20px);
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border: none;
+            background-color: wheat;
+            color: black;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-option {
+            text-align: center;
+            max-width: 160px;
+            margin: 0 auto;
+        }
+
+        .contact-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .contact-icon p {
+            color: black;
+        }
+
+        .send-button {
+            background-color: #4caf50;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px; /* Added space below button */
+        }
+
+        .send-button:hover {
+            background-color: red;
+        }
+    </style>
+    <script>
+        function showThanksPrompt() {
+            var feedbackBox = document.querySelector('.feedback-box');
+            alert("Thank you for your feedback.\nYour feedback makes us better.");
+            feedbackBox.value = ''; // Clear the text area
+        }
+    </script>
+</head>
+
+<body>
+    <div class="contact-container">
+        <h1>Contact Bookshop</h1>
+        <p>Do you have a question or feedback? We're eager to receive your input! You can use the form below or get in touch with us via alternative communication methods:</p>
+
+        <textarea class="feedback-box" placeholder="Write your comment or feedback here..."></textarea>
+
+        <a href="index.html"><button type="button" class="btn btn-primary mt-3 send-button" onclick="showThanksPrompt()">Send</button></a>
+        <a href="index.html" class="btn btn-primary mt-3 send-button" role="button">Back</a>
+
+        <div class="contact-options">
+            <div class="contact-option">
+                <a href="mailto:info@learnme.com">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <p style="color: black;">info@bookshop.com</p>
+                </a>
+            </div>
+
+            <div class="contact-option">
+                <a href="tel:+919557535154">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <p style="color: black;">+91 7219019359</p>
+                </a>
+            </div>
+
+            <div class="contact-option">
+                <a href="https://www.instagram.com/LearnMeOfficial" target="_blank">
+                    <i class="fab fa-instagram contact-icon"></i>
+                    <p style="color: black;">@bookshopOfficial</p>
+                </a>
+            </div>
+
+            <div class="contact-option">
+                <a href="https://www.facebook.com/LearnMe" target="_blank">
+                    <i class="fab fa-facebook-f contact-icon"></i>
+                    <p style="color: black;">bookshop</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

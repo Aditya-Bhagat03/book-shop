@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css">
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+    <link rel="stylesheet" href="./webfontkit-20220518-164003/myfont.css">
+    <title>Book-Shop</title>
+    <style>
+        /* Style for the search bar container */
+        .search-container {
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        /* Style for the search input field */
+        .search-input {
+            border: none;
+            padding: 10px;
+            width: 200px;
+        }
+
+        /* Style for the search button */
+        .search-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="pre-navbar bg-color" >
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin-right: 10px;"><a href="https://www.facebook.com"><img src="./img/Social1.png" alt="facebook"></a></li>
+                <li style="display: inline; margin-right: 10px;"><a href="https://twitter.com/?lang=en"><img src="./img/Social2.png" alt="twitter"></a></li>
+                <li style="display: inline; margin-right: 10px;"><a style="color: white;" href="regi.html">Sign in</a></li>
+                <li style="display: inline; margin-right: 10px;"><a style="color: white;" href="About.html">My Page</a></li>
+                <li class="dropdown" style="display: inline;">
+                    <button class="dropbtn" style="font-size: 24px;">Language</button>
+                    <div class="dropdown-content">
+                        <a href="#">English</a>
+                        <a href="#">हिन्दी</a>
+                        <a href="#">मराठी</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <nav class="nav-bar">
+            <!-- Mobile-nav -->
+            <div class="mobile-nav">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button menu-button-container' id="menuButton" for="menu-toggle">
+                </label>
+
+                <ul class="menu">
+                    <li><a class="menu-item" href="./About.html">About</a></li>
+                    <li><a class="menu-item" href="cart.html">BuyNow</a></li>
+                    <li><a class="menu-item" href="adityabhagat525@gmail,com">Contact</a></li>
+                </ul>
+            </div>
+            <!-- End Mobile Nav -->
+
+            <!-- Start Desktop Nav -->
+            <div class="desktopnav">
+                <a href="./index.html"><img class="navbar-logo" src="./img/logo.png" alt="" width=130></a>
+                <ul class="Desktop-Menu">
+                    <div class="search-container">
+                        <input class="search-input" type="text" placeholder="Search"><a href="cart.html">
+                            <button class="search-button">Search</button>
+                        </a>
+                    </div>
+                    <li><a class="Desktopmenu-item" href="./About.html">About</a></li>
+                    <li><a class="Desktopmenu-item" href="cart.html">BuyNow</a></li>
+                    <li><a class="Desktopmenu-item" href="contact.html">Contact</a></li>
+                    <li>
+                        <span id="unique-item">BookShop</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Desktop -->
+
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img class="logo" src="./img/logo.png" alt="Logo">
+
+        <h1>
+            <span>"Hello! Indians People"</span> <br>
+            India's Largest <br>Book Shop! <br> <span class="numberclass">2023</span>
+        </h1>
+
+        <div class="header-text">
+        Welcome to India's Largest Bookstore - A World of Infinite Stories and Knowledge Awaits You. Explore, Learn, and Delight in Reading
+        </div>
+        <div class="header-text2">
+            Starting From <span class="numberclasswthoutcolor">27.10.2023 ~ </span>
+        </div>
+        <div class="header-text3">
+            @ Created and Managed by Aditya Bhagat!
+        </div>
+    </section>
+
+    <section class="book-section primarybgcolor">
+        <h3 id="Booksection">Book Section</h3>
+
+        <div class=" lineheight title-book-section"></div>
+
+        <div class="Books" id="booksection">
+
+        </div>
+        <div class="btn"><button type="button">Add to Cart</button></div>
+        <div class="moresection">
+            <a href="cart.html" class="whitecolor">add to cart</a>
+        </div>
+    </section>
+
+    <section class="hotSellingBooks">
+        <h3>Hot Selling Books 🔥</h3>
+        <div class=" lineHeightHotSection bg-color"></div>
+        <div class="HotBooks" id="HotBooks">
+        </div>
+        <div class="btn2" onclick="toggle()"><button type="button" id="togglebutton">MORE<img src="./img/arrow_down.png"
+                    alt="More Button"></button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerhead">
+            <h3 class=" footertitle">Partners</h3>
+            <div class=" lineHeightfooter bg-color"></div>
+            <div class="images">
+                <ul class="imgcontainer">
+                    <li><img src="./img/Partners/mozilla.png" alt="Google" width="150"></li>
+                    <li><img src="./img/Partners/google.png" alt="Google" width="150"></li>
+                    <li><img src="./img/Partners/naver.png" alt="Naver" width="150"></li>
+                    <li><img src="./img/Partners/daumkakao.png" alt="Daumkakao" width="150"></li>
+                    <li><img src="./img/Partners/airbnb.png" alt="Airbnb" width="150"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerfoot">
+            <img src="./img/logo.png" alt="" width="150">
+            <p>All Rights Reserved adityabhagat™ copyright 2023;</p>
+        </div>
+    </footer>
+    <script defer src="./index.js"></script>
+</body>
+
+</html>
